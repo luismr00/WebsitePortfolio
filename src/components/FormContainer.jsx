@@ -76,7 +76,7 @@ class FormContainer extends React.Component {
 
     if(this.state.page === 1) {
       return (
-        <div>
+        <div id='page-container'>
         <div className="wrapper">
           <HomeMenu designs={designs} page = {this.state.page} handleChange = {this.handleChange} />
           <GridRender designs={designs} />

@@ -23,10 +23,20 @@ footer {
     padding: 10px 10px 0px 10px; 
     bottom: 0; 
     width: 100%; 
+    height: 2.5rem;
+}
+
+footer p {
+    padding-bottom: 5px;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
 }
 
 .wrapper {
-    padding-bottom: 100px;
+    padding-bottom: 2.5rem;
 }
 
 .root {
@@ -85,7 +95,8 @@ a {
 }
 
 .site-container {
-    padding-top: 365px;
+    padding-top: 50px;
+    margin: 15% 0;
     text-align: center;
     font-size: 40px;
 }
@@ -213,7 +224,7 @@ a {
     /* float: right; */
     /* padding-right: 80px; */
     text-align: justify;
-    margin: 0 455px;
+    margin: 0 15%;
 }
 
 .column_page{
