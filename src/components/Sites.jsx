@@ -20,8 +20,10 @@ class SiteRender extends React.Component {
     const images = this.props.images;
     return (
 
-        <div className="site-container">
+        <div className="center">
+          <div className="site-container">
             <p>Page is currently under maintenance</p>
+          </div>
         </div>
 
     );

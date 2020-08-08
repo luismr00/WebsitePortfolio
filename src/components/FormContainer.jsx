@@ -4,7 +4,7 @@ import SiteRender from "./Sites.jsx";
 import HomeMenu from "./Menu.jsx";
 import Footer from "./Footer.jsx";
 import Graphic1 from "../images/Gir.jpg";
-import Graphic2 from "../images/Movie Poster.jpg";
+import Graphic2 from "../images/MedicalFlyer.jpg";
 import Graphic3 from "../images/Rangel_CourseProject.jpg";
 import Graphic4 from "../images/Email blast.jpg";
 
@@ -100,7 +100,7 @@ class FormContainer extends React.Component {
           //          Use Javascript to account the content inside the Array or object.
           //       2. make a closing icon to revert back to the row/column display
           // 3. Dont worry about CSS till the end
-          <div>
+          <div id='page-container'>
             <div className="wrapper">
               <HomeMenu designs={designs} page = {this.state.page} handleChange = {this.handleChange} />
               <SiteRender designs={designs} />
