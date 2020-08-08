@@ -1,0 +1,262 @@
+/* Reset CSS
+ * --------------------------------------- */
+ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+ form,fieldset,input,textarea,p,blockquote,th,td,section,article {
+     padding: 0;
+     margin: 0;
+ }
+ a{
+     text-decoration:none;
+     color: white;
+ }
+ 
+ a:visited {
+     text-decoration: none;
+ }
+ 
+ img {
+     border: 0;
+ }
+ address,caption,cite,code,dfn,em,strong,th,var {
+     font-weight: normal;
+     font-style: normal;
+ }
+ strong{
+     font-weight: bold;
+ }
+ ol,ul {
+     list-style: none;
+     margin:0;
+     padding:0;
+ }
+ caption {
+     text-align: left;
+ }
+ h1,h2,h3,h4,h5,h6 {
+     font-weight: normal;
+     font-size: 100%;
+     margin:0;
+     padding:0;
+     color:#444;
+ }
+ 
+ /* Page styles
+  * --------------------------------------- */
+ #center_logo {
+     text-align: center;
+ }
+ .logo {
+     width: 80px;
+     max-width: 100%;
+     margin-right: 15px;
+ }
+
+ .work-anchor {
+     font-size: 27px;
+ }
+ 
+ body{
+     font-family: sans-serif;
+     color: rgba(0,0,0,0.5);
+ }
+ 
+ a {
+     font-size: 24px;
+ }
+ 
+ a:link, a:visited {
+     color: none;
+ }
+ a:hover, a:active {
+     text-decoration: underline;
+ }
+ h1 {
+     font-family: AdamPro;
+     font-size: 6em;
+     color: white;
+ }
+ p {
+     font-family: Yanone_EL;
+     font-size: 2em;
+     color: white;
+     margin: 0 auto;
+     padding: 15px 10px;
+ }
+ .section {
+     text-align: center;
+ }
+ 
+ .float_center{
+     text-align: center;
+ }
+ 
+ #menu li {
+     font-family: 'Yanone_EL', sans-serif;
+     font-size: 18px;
+     font-weight: 600;
+     display:inline-block;
+ }
+ #menu li a{
+     text-decoration:none;
+     color: white;
+ }
+ #menu li.active a:hover{
+     color: white;
+     font-weight: bold;
+ }
+ #menu li a,
+ #menu li.active a{
+     padding: 2px 25px;
+     display:block;
+ }
+ #menu li.active a{
+     color: #fff;
+ }
+ #menu{
+     position:fixed;
+     top:0;
+     left:0;
+     height: 40px;
+     z-index: 70;
+     width: 100%;
+     padding: 0;
+     margin:0;
+ }
+ 
+ .text_margin {
+     margin: 0 15%;
+     text-align: justify;
+ }
+ 
+ footer {
+     text-align: center;
+     color: white;
+ }
+ 
+ /* all images included below have been gathered from a public domain found on the web */
+ 
+ 
+ #section0 {
+     background: linear-gradient(#000, transparent), url("../images/Landscape-1.jpg") no-repeat center;
+     background-size: cover;
+ }
+ #section1 {
+     background: linear-gradient(#000, transparent),
+                 url("../images/europe.jpg") no-repeat center;
+     background-size: cover;
+ }
+ 
+ #section2 {
+     background: linear-gradient(#000, transparent),
+                 url("../images/europe1.jpg") no-repeat center;
+     background-size: cover;
+ }
+ #section3 {
+     background: linear-gradient(#000, transparent),
+                 url("../images/europe2.jpg") no-repeat center;
+     background-size: cover;
+ }
+ 
+ /*********** Fonts *************/
+
+ @font-face { 
+    font-family: 'Ababil';
+    src: url('../fonts/Ababil.ttf');
+}
+
+@font-face {
+    font-family: 'Yanone_EL';
+    src: url('../fonts/Yanone_EL.ttf');
+}
+
+@font-face {
+    font-family: 'Yanone_R';
+    src: url('../fonts/Yanone_R.ttf');
+}
+
+@font-face {
+    font-family: 'AdamPro';
+    src: url('../fonts/AdamPro.otf')
+}
+
+ /*******************************/
+ 
+ /******** Media Queries ********/
+ 
+ @media (max-width: 320px) {
+ }
+ 
+ @media only screen and (min-device-width: 320px) and (max-device-width: 481px) {  
+      .logo {
+         width: 60px;
+         max-width: 100%;
+         
+         padding-right: 15px;
+     }
+     ul li a {
+         font-size: 18px;
+     }
+     p {
+         font-size: 21px;
+     }
+     section a {
+         font-size: 21px;
+     }
+ }
+ 
+ @media only screen 
+   and (min-device-width: 320px) 
+   and (max-device-width: 481px)
+   and (orientation: landscape) {
+       .logo {
+         width: 60px;
+         max-width: 100%;
+         
+         padding-right: 15px;
+     }
+     ul li a {
+         font-size: 18px;
+     }
+     p {
+         font-size: 21px;
+     }
+     section a {
+         font-size: 21px;
+     }
+ }
+ 
+ @media (min-width: 320px) and (max-width: 481px) {
+     .logo {
+         width: 60px;
+         max-width: 100%;
+         
+         padding-right: 15px;
+     }
+     ul li a {
+         font-size: 18px;
+     }
+     p {
+         font-size: 21px;
+     }
+     section a {
+         font-size: 21px;
+     }
+ }
+ 
+ @media (min-width: 482px) and (max-width: 736px) {
+        .logo {
+         width: 70px;
+         max-width: 100%;
+         padding-right: 15px;
+     }
+     ul li a {
+         font-size: 24px;
+     }
+ } 
+ 
+ @media (min-width: 737px) and (max-width: 1025px) {
+             
+     
+ }
+ /******** Media Queries ********/
+ 

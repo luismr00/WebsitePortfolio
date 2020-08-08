@@ -1,0 +1,587 @@
+/** Note: When you come back to this, you have to experiment with percentages instead for min and max widths for both images and text within the lightbox. The margin within the .mySlides class made a difference when trying to utilize percentages when trying to make the lightbox responsive **//
+
+body, header, aside, section, article, h1, h2, h3, nav, div, footer {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+  font-family: Yanone_R, sans-serif;
+  font-size: 24px;
+  margin: 0;
+  background-color: #333;
+  color: white;
+}
+
+footer {
+    font-family: Yanone_EL, sans-serif;
+    font-size: 21px;
+    text-align: center;
+    color: white;
+    /* padding-bottom: 10px; */
+    position: absolute; 
+    padding: 10px 10px 0px 10px; 
+    bottom: 0; 
+    width: 100%; 
+}
+
+.wrapper {
+    padding-bottom: 100px;
+}
+
+.root {
+    /* margin: 0 auto; */
+}
+
+h2 {
+    padding: 20px 0;
+}
+/* #menu {
+    font-family: Yanone_EL, sans-serif;
+    font-weight: 600;
+    margin: auto;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+}
+#menu li {
+    display: inline-block;
+}
+#lower_menu {
+    margin-right: 25px;
+}
+#lower_menu li {
+    text-align: center;
+    margin: 10px 30px 0;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.logo {
+    width: 80px;
+    max-width: 100%;
+    margin-right: 15px;
+} */
+
+#root {
+    background: linear-gradient(#000, transparent);
+}
+
+/* .root {
+    margin: 40px 20%;
+} */
+
+.center {
+    margin: 0 24%;
+}
+
+.center-description {
+    /* margin: 0; */
+}
+
+.grid-container {
+    padding-top: 100px;
+}
+
+.site-container {
+    padding-top: 365px;
+    text-align: center;
+    font-size: 40px;
+}
+
+/*********** BOX ALIGNMENT *****************/
+* {
+  box-sizing: border-box;
+}
+/*********** BOX ALIGNMENT *****************/
+
+/***************** MENU *******************/
+
+#menu li {
+    font-family: 'Yanone_EL', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    display:inline-block;
+    padding: 0 10px;
+}
+#menu li a{
+	text-decoration:none;
+	color: white;
+}
+#menu li.active a:hover{
+	color: white;
+    font-weight: bold;
+}
+#menu li a,
+#menu li.active a{
+	padding: 2px 25px;
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+#menu{
+	position: static;
+	top:0;
+	left:0;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+}
+
+.logo {
+    width: 80px;
+    max-width: 100%;
+    margin-right: 15px;
+}
+
+#center_logo {
+    text-align: center;
+}
+
+.float_center{
+    text-align: center;
+}
+
+/*******************************************/
+
+ /*********** Fonts *************/
+
+ @font-face { 
+    font-family: 'Ababil';
+    src: url('../fonts/Ababil.ttf');
+}
+
+@font-face {
+    font-family: 'Yanone_EL';
+    src: url('../fonts/Yanone_EL.ttf');
+}
+
+@font-face {
+    font-family: 'Yanone_R';
+    src: url('../fonts/Yanone_R.ttf');
+}
+
+@font-face {
+    font-family: 'AdamPro';
+    src: url('../fonts/AdamPro.otf')
+}
+
+ /*******************************/
+    
+.grid-container > .design-content {
+  padding:  5px;
+}
+
+.grid-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.design-content {
+  float: left;
+  width: 50%;
+  transition: all .2s ease-in-out;
+}
+
+.design-content:hover {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(225, 225, 225), 0 6px 20px 0 rgba(225, 225, 225);
+    /* border-color: red; */
+    /* transform: scale(1.1); */
+}
+
+.design-description {
+    margin: auto;
+    padding-top: 60px;
+    width: 80%;
+    color: white;
+    text-align: center;
+    display: block;
+}
+
+.DD-design {
+    /* float: left; */
+    /* padding-left: 80px; */
+}
+
+.DD-description {
+    /* float: right; */
+    /* padding-right: 80px; */
+    text-align: justify;
+    margin: 0 455px;
+}
+
+.column_page{
+    float: left;
+    width: 50%;
+    margin-top: 15px;
+    padding-left: ;
+}
+
+
+
+/* The Modal (background)
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+.mySlides {
+    margin: 0 auto;
+}
+
+/* Modal Content */
+/*.modal-content {
+  position: ;
+  background-color: ;
+  margin: 0 10%; 
+  padding: ;
+  width: ;
+  max-width: ;
+}
+
+
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+#text-aligning {
+    font-family: Yanone_R, sans-serif;
+    position: ;
+    float: ;
+    left: 740px;
+    max-width: 550px;
+    min-width: 550px;
+    margin: ;
+    padding-right: ;
+    
+    
+} */
+
+.close {
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.next, .prev {
+    cursor: pointer;
+    position: fixed;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 0; 
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+.design-image {
+    position: ;
+    left: 235px;
+    width: 100%;
+    /* max-width: 450px;
+    min-width: 450px; */
+}
+/* .mySlides h2 {
+    font-size: 30px;
+    text-align: center
+}
+.mySlides p {
+
+    text-align: justify;
+    }
+
+.cursor {
+  cursor: pointer
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: fixed;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -5px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}   */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    font-family: Yanone_EL, sans-serif;
+    font-size: 21px;
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+}
+
+
+@media (min-width: 180px) and (max-width: 320px) {
+    .logo {
+        width: 35%;
+    }
+    .center {
+        margin: 40px 0;
+}
+    #text-aligning h2 {
+        font-size: 18px;
+    }
+     #text-aligning {
+    font-family: Yanone_R, sans-serif;
+    font-size: 16px;
+    position: relative;
+    left: 0;
+    max-width: 100%;
+    min-width: 100%;
+    margin-top: 15px;
+    margin-left: 10px;
+    
+    
+}
+.mySlides img {
+    position: relative;
+    left: 0;
+    max-width: 100%;
+    min-width: 100%;
+    margin-left: 10px;
+}
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+    .logo {
+        width: 26%;
+    }
+    .center {
+        margin: 40px 10%;
+}
+    .column {
+    margin-top: 20px;
+    float: left;
+    width: 100%;
+}
+    #text-aligning h2 {
+        font-size: 21px;
+    }
+    
+     #text-aligning {
+    font-family: Yanone_R, sans-serif;
+    font-size: 18px;
+    position: relative;
+    left: 0;
+    max-width: 100%;
+    min-width: 100%;
+    margin-top: 15px;
+    margin-left: ;
+    
+    
+}
+.mySlides img {
+    position: relative;
+    left: 0;
+    max-width: 100%;
+    min-width: 100%;
+    margin-left: ;
+}
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    .logo {
+        width: %;
+    }
+    .center {
+    margin: 40px 15%;
+    }
+    .column {
+    margin-top: 20px;
+    float: left;
+    width: 100%;
+}
+    #text-aligning {
+    font-family: Yanone_R, sans-serif;
+    position: relative;
+    left: 0;
+    max-width: 100%;
+    min-width: 100%;
+    margin-top: 15px;
+    padding-right: ;
+    
+    
+}
+.mySlides img {
+    position: relative;
+    left: 0;
+    max-width: 100%;
+    min-width: 100%;
+}
+}
+    
+
+
+@media (min-width: 769px) and (max-width: 1080px){
+    .logo {
+        width: %;
+    }
+    .center {
+    margin: 40px 15%;
+    }
+    .column {
+    margin-top: 20px;
+    float: left;
+    width: 50%;
+}
+    #text-aligning h2 {
+        font-size: 21px;
+    }
+    #text-aligning {
+    font-family: Yanone_R, sans-serif;
+    font-size: 18px;
+    position:absolute;
+    top: 200px;
+    right: 440px;
+    max-width: 400px;
+    min-width: 400px;
+    margin: ;
+    padding-right: ;
+    
+    
+}
+.mySlides img {
+    position: absolute;
+    top: 200px;
+    right: 90px;
+    max-width: 300px;
+    min-width: 300px;
+}
+}
+
+@media (min-width: 1081px) {
+    #text-aligning {
+    font-family: Yanone_R, sans-serif;
+    position: fixed;
+    float: ;
+    left: 740px;
+    max-width: 550px;
+    min-width: 550px;
+    margin: ;
+    padding-right: ;
+    
+    
+}
+.mySlides img {
+    position: fixed;
+    left: 235px;
+    max-width: 450px;
+    min-width: 450px;
+}
+}
+
