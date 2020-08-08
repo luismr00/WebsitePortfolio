@@ -95,19 +95,21 @@ a {
 }
 
 .site-container {
-    /* padding-top: 50px;
-    margin: 15% 0;
+    height: 855px;
+    display: table;
+    width: 100%;
+}
+
+.center-site {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.site-description {
+    font-size: 40px;
     text-align: center;
-    font-size: 40px; */
-        /* padding-top: 100px; */
-        text-align: center;
-        /* height: 100vh; */
-        /* margin: 45% 0; */
-        font-size: 48px;
-        position: relative;
-        /* bottom: 10px; */
-        top: 360px;
-    
+    margin: 0 15%;
 }
 
 /*********** BOX ALIGNMENT *****************/
