@@ -7,12 +7,7 @@ class Footer extends React.Component {
     
     };
     
-    //this.handleChange = this.handleChange.bind(this);
   }
-  
-  /*handleChange(event) {
-    this.setState({ [event.target.id]: event.target.value });
-  }*/
   
   render(props) {
     const images = this.props.images;

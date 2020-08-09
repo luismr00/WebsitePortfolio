@@ -5,7 +5,6 @@ import Scroll1 from "./Welcome.jsx";
 import Scroll2 from "./Work.jsx";
 import Scroll3 from "./About.jsx";
 import Scroll4 from "./Contact.jsx";
-//import images from '../images/';
 
 class HomeContainer extends React.Component {
   constructor() {
