@@ -69,7 +69,7 @@ class GridRender extends React.Component {
       this.setState({
         showGrid: true
       });
-      alert('Going back to grid mode');
+    //   alert('Going back to grid mode');
       //console.log("The current state of show grid s: " + this.state.showGrid);
       var hideMenu = document.getElementById('menu');
       hideMenu.style.display = "block";
@@ -101,7 +101,7 @@ class GridRender extends React.Component {
             index: index
         });
 
-        alert('Previous slide\'s index is: ' + index)
+        // alert('Previous slide\'s index is: ' + index)
     }
 
     nextSlide() {
@@ -120,7 +120,7 @@ class GridRender extends React.Component {
             index: index
         });
 
-        alert('Next slide\'s index is: ' + index)
+        // alert('Next slide\'s index is: ' + index)
     }
     
     clickDesign(event) {

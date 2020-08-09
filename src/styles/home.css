@@ -5,113 +5,66 @@
      padding: 0;
      margin: 0;
  }
- a{
-     text-decoration:none;
-     color: white;
- }
+
+ h1 {
+    font-family: AdamPro;
+    font-size: 6em;
+    color: white;
+}
+
+p {
+    font-family: Yanone_EL;
+    font-size: 2em;
+    color: white;
+    margin: 0 auto;
+    padding: 15px 10px;
+}
+
+.section {
+    text-align: center;
+}
+
+/*For the menu anchors*/
+.float_center{
+    text-align: center;
+}
+
+/*Aligns the paragraphs in the middle center of the page*/
+.text_margin {
+    margin: 0 15%;
+    text-align: justify;
+}
  
- a:visited {
-     text-decoration: none;
- }
- 
- img {
-     border: 0;
- }
- address,caption,cite,code,dfn,em,strong,th,var {
-     font-weight: normal;
-     font-style: normal;
- }
- strong{
-     font-weight: bold;
- }
- ol,ul {
-     list-style: none;
-     margin:0;
-     padding:0;
- }
- caption {
-     text-align: left;
- }
- h1,h2,h3,h4,h5,h6 {
-     font-weight: normal;
-     font-size: 100%;
-     margin:0;
-     padding:0;
-     color:#444;
- }
- 
- /* Page styles
-  * --------------------------------------- */
- #center_logo {
-     text-align: center;
- }
- .logo {
-     width: 80px;
-     max-width: 100%;
-     margin-right: 15px;
+#center_logo {
+    text-align: center;
  }
 
- .work-anchor {
-     font-size: 27px;
- }
- 
- body{
-     font-family: sans-serif;
-     color: rgba(0,0,0,0.5);
- }
- 
- a {
-     font-size: 24px;
- }
- 
- a:link, a:visited {
-     color: none;
- }
- a:hover, a:active {
-     text-decoration: underline;
- }
- h1 {
-     font-family: AdamPro;
-     font-size: 6em;
-     color: white;
- }
- p {
-     font-family: Yanone_EL;
-     font-size: 2em;
-     color: white;
-     margin: 0 auto;
-     padding: 15px 10px;
- }
- .section {
-     text-align: center;
- }
- 
- .float_center{
-     text-align: center;
- }
- 
- #menu li {
-     font-family: 'Yanone_EL', sans-serif;
-     font-size: 18px;
-     font-weight: 600;
-     display:inline-block;
- }
- #menu li a{
-     text-decoration:none;
-     color: white;
- }
- #menu li.active a:hover{
-     color: white;
-     font-weight: bold;
- }
- #menu li a,
- #menu li.active a{
+.logo {
+    width: 80px;
+    max-width: 100%;
+    margin-right: 15px;
+}
+
+.work-anchor {
+    font-size: 27px;
+}
+
+/*For anchors to be aligned next to each other*/
+#menu li {
+    font-family: 'Yanone_EL', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+/*Sets the padding spacing among the menu anchor elements*/
+#menu li a,
+#menu li.active a{
      padding: 2px 25px;
      display:block;
- }
- #menu li.active a{
-     color: #fff;
- }
+}
+
+ /*Keeping the menu centered at the exact position with fixed*/
  #menu{
      position:fixed;
      top:0;
@@ -122,19 +75,42 @@
      padding: 0;
      margin:0;
  }
- 
- .text_margin {
-     margin: 0 15%;
-     text-align: justify;
- }
- 
- footer {
-     text-align: center;
+
+  /* #menu li a{
+     text-decoration:none;
      color: white;
+ } */
+
+ /* #menu li.active a:hover{
+     color: white;
+     font-weight: bold;
+ } */
+
+  /* #menu li.active a{
+     color: #fff;
+ } */
+
+/*bottom two css elements go hand to hand for underlining and having the anchor texts in white along with a hover feature*/
+a {
+    font-size: 24px;
+    text-decoration:none;
+    color: white;
+}
+
+ a:hover, a:active {
+     text-decoration: underline;
  }
+
+  /* a:visited {
+     text-decoration: none;
+ } */
+
+  /* a:link, a:visited {
+     color: none;
+ } */
+
  
  /* all images included below have been gathered from a public domain found on the web */
- 
  
  #section0 {
      background: linear-gradient(#000, transparent), url("../images/Landscape-1.jpg") no-repeat center;
@@ -156,6 +132,8 @@
                  url("../images/europe2.jpg") no-repeat center;
      background-size: cover;
  }
+
+ /*************************************************************************************/
  
  /*********** Fonts *************/
 
@@ -182,7 +160,7 @@
  /*******************************/
  
  /******** Media Queries ********/
- 
+ /*
  @media (max-width: 320px) {
  }
  
@@ -258,5 +236,6 @@
              
      
  }
+ */
  /******** Media Queries ********/
  

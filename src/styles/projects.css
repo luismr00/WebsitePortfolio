@@ -1,4 +1,4 @@
-/** Note: When you come back to this, you have to experiment with percentages instead for min and max widths for both images and text within the lightbox. The margin within the .mySlides class made a difference when trying to utilize percentages when trying to make the lightbox responsive **//
+/** Note: When you come back to this, you have to experiment with percentages instead for min and max widths for both images and text within the lightbox. The margin within the .mySlides class made a difference when trying to utilize percentages when trying to make the lightbox responsive **/
 
 body, header, aside, section, article, h1, h2, h3, nav, div, footer {
     padding: 0;
@@ -11,6 +11,14 @@ body {
   margin: 0;
   background-color: #333;
   color: white;
+}
+
+#root {
+    background: linear-gradient(#000, transparent);
+}
+
+.wrapper {
+    padding-bottom: 2.5rem;
 }
 
 footer {
@@ -30,94 +38,35 @@ footer p {
     padding-bottom: 5px;
 }
 
-#page-container {
-    position: relative;
-    min-height: 100vh;
-}
-
-.wrapper {
-    padding-bottom: 2.5rem;
-}
-
-.root {
-    /* margin: 0 auto; */
-}
-
-h2 {
-    padding: 20px 0;
-}
-/* #menu {
-    font-family: Yanone_EL, sans-serif;
-    font-weight: 600;
-    margin: auto;
-    text-decoration: none;
-    list-style: none;
-    text-align: center;
-}
-#menu li {
-    display: inline-block;
-}
-#lower_menu {
-    margin-right: 25px;
-}
-#lower_menu li {
-    text-align: center;
-    margin: 10px 30px 0;
-}
-a {
-    text-decoration: none;
-    color: white;
-}
-.logo {
-    width: 80px;
-    max-width: 100%;
-    margin-right: 15px;
-} */
-
-#root {
-    background: linear-gradient(#000, transparent);
-}
-
-/* .root {
-    margin: 40px 20%;
-} */
-
-.center {
-    margin: 0 24%;
-}
-
-.center-description {
-    /* margin: 0; */
-}
-
-.grid-container {
-    padding-top: 100px;
-    padding-bottom: 20px;
-}
-
-.site-container {
-    height: 85vh;
-    display: table;
-    width: 100%;
-}
-
-.center-site {
-    display: table-cell;
-    vertical-align: middle;
-    width: 100%;
-}
-
-.site-description {
-    font-size: 40px;
-    text-align: center;
-    margin: 0 15%;
-}
-
 /*********** BOX ALIGNMENT *****************/
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+  }
+/******************************************/
+
+ /**************** FONTS *****************/
+
+ @font-face { 
+    font-family: 'Ababil';
+    src: url('../fonts/Ababil.ttf');
 }
-/*********** BOX ALIGNMENT *****************/
+
+@font-face {
+    font-family: 'Yanone_EL';
+    src: url('../fonts/Yanone_EL.ttf');
+}
+
+@font-face {
+    font-family: 'Yanone_R';
+    src: url('../fonts/Yanone_R.ttf');
+}
+
+@font-face {
+    font-family: 'AdamPro';
+    src: url('../fonts/AdamPro.otf')
+}
+
+ /*************************************/
 
 /***************** MENU *******************/
 
@@ -128,10 +77,20 @@ a {
     display:inline-block;
     padding: 0 10px;
 }
-#menu li a{
+/* #menu li a{
 	text-decoration:none;
 	color: white;
+} */
+
+a{
+    text-decoration:none;
+    color: white;
 }
+
+a:hover, a:active {
+    text-decoration: underline;
+}
+
 #menu li.active a:hover{
 	color: white;
     font-weight: bold;
@@ -169,53 +128,52 @@ a {
     text-align: center;
 }
 
-/*******************************************/
+/* Graphics, Websites, and modal selectors */
 
- /*********** Fonts *************/
-
- @font-face { 
-    font-family: 'Ababil';
-    src: url('../fonts/Ababil.ttf');
+#page-container {
+    position: relative;
+    min-height: 100vh;
 }
 
-@font-face {
-    font-family: 'Yanone_EL';
-    src: url('../fonts/Yanone_EL.ttf');
+.center {
+    margin: 0 24%;
 }
 
-@font-face {
-    font-family: 'Yanone_R';
-    src: url('../fonts/Yanone_R.ttf');
+.grid-container {
+    padding-top: 100px;
+    padding-bottom: 20px;
 }
 
-@font-face {
-    font-family: 'AdamPro';
-    src: url('../fonts/AdamPro.otf')
-}
-
- /*******************************/
-    
 .grid-container > .design-content {
-  padding:  5px;
+    padding:  5px;
 }
 
+/*Don't remember what content and clear is doing but display set to table allows the grid elements to display side by side*/
 .grid-container:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
-
+  
+/*You can adjust the width for responsive web purposes with media queries*/
 .design-content {
-  float: left;
-  width: 50%;
-  transition: all .2s ease-in-out;
+    float: left;
+    width: 50%;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
 }
-
+  
+/*Gives each design div a hover feature*/
 .design-content:hover {
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(225, 225, 225), 0 6px 20px 0 rgba(225, 225, 225);
     /* border-color: red; */
     /* transform: scale(1.1); */
+}
+  
+.design-image {
+    left: 235px;
+    width: 100%;
 }
 
 .design-description {
@@ -227,146 +185,34 @@ a {
     display: block;
 }
 
-.DD-design {
-    /* float: left; */
-    /* padding-left: 80px; */
-}
 
 .DD-description {
-    /* float: right; */
-    /* padding-right: 80px; */
     text-align: justify;
     margin: 0 15%;
 }
 
-.column_page{
-    float: left;
-    width: 50%;
-    margin-top: 15px;
-    padding-left: ;
-}
-
-
-
-/* The Modal (background)
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black;
-}
-
-.mySlides {
-    margin: 0 auto;
-}
-
-/* Modal Content */
-/*.modal-content {
-  position: ;
-  background-color: ;
-  margin: 0 10%; 
-  padding: ;
-  width: ;
-  max-width: ;
-}
-
-
-.close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.mySlides {
-  display: none;
-}
-
-#text-aligning {
-    font-family: Yanone_R, sans-serif;
-    position: ;
-    float: ;
-    left: 740px;
-    max-width: 550px;
-    min-width: 550px;
-    margin: ;
-    padding-right: ;
-    
-    
-} */
-
-.close {
-    color: white;
-    cursor: pointer;
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.next, .prev {
-    cursor: pointer;
-    position: fixed;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-.prev {
-    left: 0; 
-    border-radius: 3px 0 0 3px;
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-
-.design-image {
-    position: ;
-    left: 235px;
+.site-container {
+    height: 85vh;
+    display: table;
     width: 100%;
-    /* max-width: 450px;
-    min-width: 450px; */
-}
-/* .mySlides h2 {
-    font-size: 30px;
-    text-align: center
-}
-.mySlides p {
-
-    text-align: justify;
-    }
-
-.cursor {
-  cursor: pointer
 }
 
-/* Next & previous buttons */
+.center-site {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.site-description {
+    font-size: 40px;
+    text-align: center;
+    margin: 0 15%;
+}
+
+/*******************************************/
+
+/* Next, previous, and close buttons */
+
 .prev,
 .next {
   cursor: pointer;
@@ -395,61 +241,31 @@ a {
 }
 
 
-/* On hover, add a black background color with a little bit see-through */
+/*On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+.close {
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 img {
   margin-bottom: -5px;
 }
 
-.caption-container {
-  text-align: center;
-  background-color: black;
-  padding: 2px 16px;
-  color: white;
-}
+/*******************************************/
 
-.demo {
-  opacity: 0.6;
-}
+/* Media Queries */
 
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
-img.hover-shadow {
-  transition: 0.3s
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
-}   */
-
-footer {
-    position: absolute;
-    bottom: 0;
-    font-family: Yanone_EL, sans-serif;
-    font-size: 21px;
-    text-align: center;
-    color: white;
-    padding-bottom: 10px;
-}
-
-
-@media (min-width: 180px) and (max-width: 320px) {
+/* @media (min-width: 180px) and (max-width: 320px) {
     .logo {
         width: 35%;
     }
@@ -607,4 +423,4 @@ footer {
     min-width: 450px;
 }
 }
-
+ */

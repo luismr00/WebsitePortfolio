@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
     entry: {
         home: './src/home.jsx',
-        scroll: './src/scroll.jsx'
+        scroll: './src/projects.jsx'
 
     },
     output: {

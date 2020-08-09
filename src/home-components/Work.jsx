@@ -24,7 +24,7 @@ class Scroll2 extends React.Component {
         <div className="text_margin">
             <p>Each design within my work reflects a combination of both Graphic and Web Design skills. From designing posters to developing websites, my goal is to come up with the best possible designs that can show beauty and attraction to the human sight. </p>
         </div>    
-        <a href="scroll.html"><p className="work-anchor"><b>View my work</b></p></a>
+        <a href="projects.html"><p className="work-anchor"><b>View my work</b></p></a>
    </section> 
       
 

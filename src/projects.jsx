@@ -18,7 +18,7 @@ reactDOM.render(<App />, document.getElementById('root'));
 
 import React from 'react';
 import ReactDOM from "react-dom";
-import './styles/style.css';
+import './styles/projects.css';
 //import './styles/home.css';
 import FormContainer from "./components/FormContainer.jsx";
 //import HomeScroll from "./home-components/Home.jsx";
