@@ -20,7 +20,7 @@ import React from 'react';
 import ReactDOM from "react-dom";
 import './styles/projects.css';
 //import './styles/home.css';
-import FormContainer from "./components/FormContainer.jsx";
+import FormContainer from "./project-components/FormContainer.jsx";
 //import HomeScroll from "./home-components/Home.jsx";
 
 // const wrapper = document.getElementById("create-article-form");
