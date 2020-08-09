@@ -188,7 +188,7 @@ a:hover, a:active {
 
 .DD-description {
     text-align: justify;
-    margin: 0 15%;
+    margin: 0 25%;
 }
 
 .site-container {
@@ -259,11 +259,24 @@ a:hover, a:active {
 
 img {
   margin-bottom: -5px;
+  width: 50%;
 }
 
 /*******************************************/
 
 /* Media Queries */
+
+/* Only one media query used for project.html. Will require menu to be rized after 380px. */
+@media (min-width: 180px) and (max-width: 950px) {
+    .center {
+        margin: 0 20%;
+    }
+
+    .design-content {
+        float: none;
+        width: 100%;
+    }
+}
 
 /* @media (min-width: 180px) and (max-width: 320px) {
     .logo {
