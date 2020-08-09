@@ -138,8 +138,8 @@ class HomeMenu extends React.Component {
             <li data-menuanchor="page1"><a href="home.html"><img className="logo" src= {Logo}></img></a></li>
         </div>
         <div className="float_center">
-        <li onClick={this.changePage1}><a href="#page2">Graphics</a></li>
-        <li onClick={this.changePage2}><a href="#page3">Websites</a></li>
+        <li data-menuanchor="graphics" onClick={this.changePage1}><a href="#graphics">Graphics</a></li>
+        <li data-menuanchor="websites" onClick={this.changePage2}><a href="#websites">Websites</a></li>
         {/* <li data-menuanchor="page4"><a href="#page4">Contact</a></li> */}
         </div>
       </ul>
