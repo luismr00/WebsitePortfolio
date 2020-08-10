@@ -214,22 +214,28 @@ a {
          font-size: 18px;
      }
      p {
-         font-size: 21px;
+         font-size: 16px;
      }
      section a {
+         font-size: 21px;
+     }
+     h1 {
+         font-size: 3em;
+     }
+     .work-anchor {
          font-size: 21px;
      }
  }
  
  @media (min-width: 482px) and (max-width: 736px) {
-        .logo {
-         width: 70px;
-         max-width: 100%;
-         padding-right: 15px;
+    .logo {
+        width: 70px;
+        max-width: 100%;
+        padding-right: 15px;
      }
-     ul li a {
+    ul li a {
          font-size: 24px;
-     }
+    }
  } 
  
  /* @media (min-width: 737px) and (max-width: 1025px) {

@@ -267,7 +267,7 @@ img {
 /* Media Queries */
 
 /* Only one media query used for project.html. Will require menu to be rized after 380px. */
-@media (min-width: 180px) and (max-width: 950px) {
+/* @media (min-width: 180px) and (max-width: 950px) {
     .center {
         margin: 0 20%;
     }
@@ -276,7 +276,56 @@ img {
         float: none;
         width: 100%;
     }
+} */
+
+/* Two media queries where added to display both phones and tablets */
+@media (min-width: 320px) and (max-width: 481px) {
+
+    .center {
+        margin: 0 20%;
+    }
+
+    .design-content {
+        float: none;
+        width: 100%;
+    }
+
+    .design-description {
+        width: 100%;
+    }
+
+    .site-description p {
+        font-size: 21px;
+    }
+
+    .logo {
+        width: 60px;
+        max-width: 100%;
+        
+        /* padding-right: 15px; */
+    }
+    ul li a {
+        font-size: 18px;
+    }
+    p {
+        font-size: 16px;
+    }
+    section a {
+        font-size: 21px;
+    }
+
 }
+
+@media (min-width: 482px) and (max-width: 736px) {
+    .center {
+        margin: 0 20%;
+    }
+
+    .design-content {
+        float: none;
+        width: 100%;
+    }
+} 
 
 /* @media (min-width: 180px) and (max-width: 320px) {
     .logo {
