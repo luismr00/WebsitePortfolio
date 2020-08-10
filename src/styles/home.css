@@ -160,8 +160,8 @@ a {
  /*******************************/
  
  /******** Media Queries ********/
- /*
- @media (max-width: 320px) {
+ 
+ /* @media (max-width: 320px) {
  }
  
  @media only screen and (min-device-width: 320px) and (max-device-width: 481px) {  
@@ -180,9 +180,9 @@ a {
      section a {
          font-size: 21px;
      }
- }
+ } */
  
- @media only screen 
+ /* @media only screen 
    and (min-device-width: 320px) 
    and (max-device-width: 481px)
    and (orientation: landscape) {
@@ -201,7 +201,7 @@ a {
      section a {
          font-size: 21px;
      }
- }
+ } */
  
  @media (min-width: 320px) and (max-width: 481px) {
      .logo {
@@ -232,10 +232,10 @@ a {
      }
  } 
  
- @media (min-width: 737px) and (max-width: 1025px) {
+ /* @media (min-width: 737px) and (max-width: 1025px) {
              
      
- }
- */
+ } */
+ 
  /******** Media Queries ********/
  
