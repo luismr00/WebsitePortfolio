@@ -36,6 +36,7 @@ This is my website portfolio for my own personal projects to show to future empl
 
 * Add facebook, linkedin, and mail icons at home.html
 
+* Redraw logo so it looks like an L and R
 
 
 
