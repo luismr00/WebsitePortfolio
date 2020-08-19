@@ -4,6 +4,9 @@
 
 This is my website portfolio for my own personal projects to show to future employers or internships. Obviously any code from a project can simply be saved and seen over github, but the portfolio can serve as an additional piece to view some of the projects visually without having to run it with an IDE. The portfolio is only composed of two webpages. One is to display general information about myself and the other for displaying projects. The project page will be showing graphic designs, websites, and school projects. Although, I will keep updating the portfolio as I go while I am still a student. Any new update will be shown below under the **Updates** section without having to look into the commits here on github within this project. Regardless, the source code will still be uploaded to github for any new projects I add towards this portfolio.
 
+To view my personal Web Portfolio online, visit: 
+http://web-portfolio-lmr.herokuapp.com/
+
 ## Updates 
 
 * This website portfolio was done back in 2017. Although, I updated my old portfolio to React in order to stay up to date with current web development practices. To take a look at my old portfolio, you can visit the source code *here*. You will notice that the react version looks much cleaner compared to the older version.
