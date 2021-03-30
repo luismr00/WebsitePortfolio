@@ -36,7 +36,7 @@ class GridRender extends React.Component {
         let index = this.state.index;
         
         if (index === 0) {
-            index = 3
+            index = 9
         } 
         else {
             index = index - 1
@@ -52,7 +52,7 @@ class GridRender extends React.Component {
 
         let index = this.state.index;
         
-        if (index === 3) {
+        if (index === 9) {
             index = 0
         } 
         else {
