@@ -10,10 +10,9 @@
     "node": "12.10.0"
   },
   "scripts": {
-    "dev": "webpack-dev-server",
+    "dev": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "postinstall": "webpack -p",
-    "build": "webpack --mode=production",
-    "start": "webpack --mode=development"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
