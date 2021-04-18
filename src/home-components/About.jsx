@@ -15,7 +15,7 @@ class Scroll3 extends React.Component {
 
     <section className="section" id="section2">
         <div className="text_margin">
-        <p>Hi, my name is Luis Rangel, and I am a Computer Science student with a specialization in Graphic and Web Design. My current programming skills at the moment are C++, JAVA, HTML, CSS, JavaScript, React.js, and Express.js. I also have skills in both Photoshop and Illustrator where I work with graphic design projects from time to time. There is still a lot to learn but I do make sure to keep learning new things aside from school projects in order to increase my proficiency as a developer. </p>
+        <p>Hi, my name is Luis Rangel, and I am a Computer Science student from California State University Northridge aiming to specialize in Graphic Design and Full-Stack Development. The current skills that I am familiar with at the moment are C++, JAVA, HTML, CSS, JavaScript, Ruby, React.js, Express.js, and MySQL. I also have skills in both Photoshop and Illustrator where I work with graphic design projects from time to time. While most of my strengths lie currently in front-end, I still aim to learn more about back-end in the near future.</p>
         </div>
    </section> 
       
