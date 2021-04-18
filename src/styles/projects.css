@@ -136,12 +136,15 @@ a:hover, a:active {
 }
 
 .center {
-    margin: 0 24%;
+    margin: 0 20%;
 }
 
 .grid-container {
     padding-top: 100px;
     padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .grid-container > .design-content {
@@ -151,14 +154,14 @@ a:hover, a:active {
 /*Don't remember what content and clear is doing but display set to table allows the grid elements to display side by side*/
 .grid-container:after {
     content: "";
-    display: table;
+    /* display: table; */
     clear: both;
 }
   
 /*You can adjust the width for responsive web purposes with media queries*/
 .design-content {
-    float: left;
-    width: 50%;
+    /* float: left; */
+    width: 35%;
     transition: all .2s ease-in-out;
     cursor: pointer;
 }
@@ -312,6 +315,10 @@ img {
     }
     section a {
         font-size: 21px;
+    }
+
+    .grid-container {
+        padding-top: 70px;
     }
 
 }

@@ -37,8 +37,6 @@ http://web-portfolio-lmr.herokuapp.com/
 
 * Upload the old web portfolio to github to show the improvements between the old and the new one. Include a link at the top under updates within the first bullet where it says 'here'.
 
-* Add facebook, linkedin, and mail icons at home.html
-
 * Redraw logo so it looks like an L and R
 
 
