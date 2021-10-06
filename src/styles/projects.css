@@ -195,8 +195,13 @@ a:hover, a:active {
 }
 
 .site-container {
-    height: 85vh;
-    display: table;
+    /* height: 80vh; */
+    /* display: table; */
+    padding-top: 100px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
 }
 
@@ -207,9 +212,21 @@ a:hover, a:active {
 }
 
 .site-description {
-    font-size: 40px;
+    /* font-size: 24px; */
     text-align: center;
     margin: 0 15%;
+    padding: 10px;
+}
+
+.site-description h1 {
+    padding: 10px 0;
+    font-size: 26px;
+}
+
+.site-description a {
+    padding: 22px 0;
+    display: inline-block;
+    font-size: 20px;
 }
 
 /*******************************************/
@@ -263,6 +280,21 @@ a:hover, a:active {
 img {
   margin-bottom: -5px;
   width: 50%;
+}
+
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+  
+.video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 /*******************************************/
