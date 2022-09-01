@@ -24,7 +24,7 @@ class SiteRender extends React.Component {
 
             <h1>Social Media Site</h1>
             <YoutubeEmbed embedId="487r3n4J9a8" />
-            <a href="https://github.com/luismr00/C440-Project" title="social meida" target="_blank">Check out the GitHub Repo for social media site project</a>
+            <a href="https://github.com/luismr00/C440-Project" title="social meida" target="_blank">Check out the GitHub Repo for the social media site project</a>
 
             <h1>Snap Nourish</h1>
             <YoutubeEmbed embedId="i0sDY-NdTZY" />
