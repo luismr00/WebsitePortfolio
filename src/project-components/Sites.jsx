@@ -18,6 +18,14 @@ class SiteRender extends React.Component {
         <div className="center-site">
           <div className="site-description">
 
+            <h1>School Projects</h1>
+            <YoutubeEmbed embedId="JBRuNSaUJE8" />
+            <a href="https://github.com/luismr00" title="school projects" target="_blank">Check out my GitHub Repo to find all the projects shown in this video</a>
+
+            <h1>Social Media Site</h1>
+            <YoutubeEmbed embedId="487r3n4J9a8" />
+            <a href="https://github.com/luismr00/C440-Project" title="social meida" target="_blank">Check out the GitHub Repo for social media site project</a>
+
             <h1>Snap Nourish</h1>
             <YoutubeEmbed embedId="i0sDY-NdTZY" />
             <a href="https://github.com/ssotoale/SnapNourish" title="snap nourish" target="_blank">Check out the GitHub Repo for Snap Nourish</a>
